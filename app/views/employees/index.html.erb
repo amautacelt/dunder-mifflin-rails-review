@@ -1,1 +1,5 @@
 <h1>employees/index: All Employees Index</h1>
+
+<% @employees.each do |employee| %>
+<p><%= link_to employee.full_name, employee_path(employee.id) %></p>
+<% end %>
